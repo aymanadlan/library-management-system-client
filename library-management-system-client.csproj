@@ -1,0 +1,1118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{892A26EC-1F2C-49F2-AC07-C633BC39550B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>library_management_system_client</RootNamespace>
+    <AssemblyName>library-management-system-client</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44395</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2023.3.1010.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for ASP.NET AJAX R3 2023\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Demo.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\library-management-client - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-KE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-KE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-TZ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-TZ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-UG.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-UG.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.syr-SY.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.syr-SY.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.syr.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.syr.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-IN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-IN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-LK.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-LK.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-MY.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-MY.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-SG.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-SG.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.te-IN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.te-IN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.te.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.te.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo-KE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo-KE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo-UG.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo-UG.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg-Cyrl-TJ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg-Cyrl-TJ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg-Cyrl.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg-Cyrl.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.th-TH.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.th-TH.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.th.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.th.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti-ER.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti-ER.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti-ET.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti-ET.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tig-ER.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tig-ER.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tig.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tig.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tk-TM.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tk-TM.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tk.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tk.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn-BW.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn-BW.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn-ZA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn-ZA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.to-TO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.to-TO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.to.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.to.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr-CY.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr-CY.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr-TR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr-TR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ts-ZA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ts-ZA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ts.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ts.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tt-RU.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tt-RU.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tt.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tt.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.twq-NE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.twq-NE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.twq.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.twq.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Arab-MA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Arab-MA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Arab.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Arab.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn-DZ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn-DZ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn-MA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn-MA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Tfng-MA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Tfng-MA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Tfng.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Tfng.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ug-CN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ug-CN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ug.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ug.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uk-UA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uk-UA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uk.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uk.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur-IN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur-IN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur-PK.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur-PK.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Arab-AF.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Arab-AF.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Arab.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Arab.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Cyrl-UZ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Cyrl-UZ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Cyrl.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Cyrl.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Latn-UZ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Latn-UZ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Latn.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Latn.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Latn-LR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Latn-LR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Latn.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Latn.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Vaii-LR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Vaii-LR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Vaii.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Vaii.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ve-ZA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ve-ZA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ve.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ve.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vi-VN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vi-VN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vi.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vi.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vo-001.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vo-001.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vo.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vo.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vun-TZ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vun-TZ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vun.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vun.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wae-CH.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wae-CH.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wae.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wae.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wal-ET.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wal-ET.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wal.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wal.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wo-SN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wo-SN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wo.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wo.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xh-ZA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xh-ZA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xh.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xh.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xog-UG.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xog-UG.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xog.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xog.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yav-CM.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yav-CM.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yav.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yav.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yi-001.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yi-001.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yi.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yi.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo-BJ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo-BJ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo-NG.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo-NG.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh-Tfng-MA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh-Tfng-MA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh-Tfng.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh-Tfng.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CHS.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CHS.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CHT.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CHT.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans-HK.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans-HK.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans-MO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans-MO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hant.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hant.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-HK.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-HK.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-MO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-MO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-SG.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-SG.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-TW.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-TW.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zu-ZA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zu-ZA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zu.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zu.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.actionsheet.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.actionsheet.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.angular.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.angular.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.autocomplete.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.autocomplete.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.badge.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.badge.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.binder.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.binder.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.bottomnavigation.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.bottomnavigation.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.button.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.button.menu.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.button.menu.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.button.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.buttongroup.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.buttongroup.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.calendar.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.calendar.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.checkbox.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.checkbox.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.color.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.color.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.colorpicker.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.colorpicker.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.combobox.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.combobox.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.core.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.core.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.odata.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.odata.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.signalr.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.signalr.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.xml.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.xml.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dateinput.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dateinput.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.datepicker.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.datepicker.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.datetimepicker.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.datetimepicker.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dialog.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dialog.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.draganddrop.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.draganddrop.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dropdownbutton.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dropdownbutton.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dropdownlist.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dropdownlist.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.editable.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.editable.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.floatinglabel.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.floatinglabel.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.fx.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.fx.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.base.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.base.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.button.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.button.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.chip.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.chip.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.chiplist.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.chiplist.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.icon.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.icon.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.input.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.input.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.icons.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.icons.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.label.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.label.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.list.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.list.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.listbox.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.listbox.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.listview.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.listview.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.loader.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.loader.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.maskedtextbox.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.maskedtextbox.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.menu.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.menu.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.mobile.scroller.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.mobile.scroller.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.multiselect.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.multiselect.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.notification.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.notification.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.numerictextbox.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.numerictextbox.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.pager.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.pager.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.panelbar.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.panelbar.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.popup.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.popup.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.progressbar.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.progressbar.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.resizable.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.resizable.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.responsivepanel.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.responsivepanel.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.router.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.router.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.selectable.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.selectable.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.slider.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.slider.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.sortable.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.sortable.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.splitbutton.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.splitbutton.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.splitter.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.splitter.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.tabstrip.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.tabstrip.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.textarea.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.textarea.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.textbox.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.textbox.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.timepicker.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.timepicker.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.timezones.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.togglebutton.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.togglebutton.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.toggleinputbase.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.toggleinputbase.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.toolbar.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.toolbar.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.tooltip.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.tooltip.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.touch.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.touch.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.ui.core.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.ui.core.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.userevents.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.userevents.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.validator.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.validator.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.view.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.view.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.virtuallist.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.virtuallist.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.window.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.window.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-AE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-AE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-BH.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-BH.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-DJ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-DJ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-DZ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-DZ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-EG.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-EG.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-ER.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-ER.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-IL.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-IL.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-IQ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-IQ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-JO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-JO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-KM.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-KM.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-KW.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-KW.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-LB.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-LB.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-LY.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-LY.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-MA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-MA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-MR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-MR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-OM.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-OM.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-PS.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-PS.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-QA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-QA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SD.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SD.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SS.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SS.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SY.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SY.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-TD.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-TD.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-TN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-TN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-YE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-YE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.bg-BG.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.bg-BG.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.cs-CZ.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.cs-CZ.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.da-DK.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.da-DK.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-AT.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-AT.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-CH.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-CH.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-DE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-DE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-LI.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-LI.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.el-GR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.el-GR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-AU.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-AU.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-CA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-CA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-GB.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-GB.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-US.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-US.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-AR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-AR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-BO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-BO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CL.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CL.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-DO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-DO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-EC.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-EC.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-ES.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-ES.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-GT.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-GT.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-HN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-HN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-MX.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-MX.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-NI.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-NI.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PY.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PY.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-US.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-US.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-UY.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-UY.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-VE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-VE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fa-IR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fa-IR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fi-FI.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fi-FI.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-BE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-BE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CD.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CD.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CH.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CH.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CI.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CI.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CM.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CM.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-FR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-FR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-HT.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-HT.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-LU.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-LU.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-MA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-MA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-MC.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-MC.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-ML.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-ML.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-SN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-SN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.he-IL.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.he-IL.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hr-HR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hr-HR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hu-HU.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hu-HU.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hy-AM.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hy-AM.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.it-CH.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.it-CH.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.it-IT.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.it-IT.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ja-JP.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ja-JP.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.mk-MK.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.mk-MK.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nb-NO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nb-NO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nl-BE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nl-BE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nl-NL.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nl-NL.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pl-PL.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pl-PL.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pt-BR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pt-BR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pt-PT.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pt-PT.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ro-RO.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ro-RO.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ru-RU.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ru-RU.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sk-SK.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sk-SK.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sq-AL.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sq-AL.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sr-Latn-RS.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sr-Latn-RS.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sv-SE.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sv-SE.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.tr-TR.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.tr-TR.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.uk-UA.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.uk-UA.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.vi-VN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.vi-VN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-CN.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-CN.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-HK.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-HK.min.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-TW.js" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-TW.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="TestTelerik.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-TW.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-HK.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.zh-CN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.vi-VN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.uk-UA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.tr-TR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sv-SE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sr-Latn-RS.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sq-AL.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.sk-SK.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ru-RU.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ro-RO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pt-PT.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pt-BR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.pl-PL.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nl-NL.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nl-BE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.nb-NO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.mk-MK.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ja-JP.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.it-IT.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.it-CH.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hy-AM.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hu-HU.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.hr-HR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.he-IL.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-SN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-ML.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-MC.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-MA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-LU.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-HT.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-FR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CM.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CI.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CH.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CD.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-CA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fr-BE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fi-FI.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.fa-IR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-VE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-UY.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-US.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PY.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-PA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-NI.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-MX.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-HN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-GT.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-ES.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-EC.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-DO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-CL.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-BO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.es-AR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-US.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-GB.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-CA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.en-AU.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.el-GR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-LI.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-DE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-CH.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.de-AT.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.da-DK.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.cs-CZ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.bg-BG.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-YE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-TN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-TD.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SY.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SS.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SD.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-SA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-QA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-PS.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-OM.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-MR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-MA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-LY.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-LB.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-KW.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-KM.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-JO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-IQ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-IL.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-ER.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-EG.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-DZ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-DJ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-BH.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\messages\kendo.messages.ar-AE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.window.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.virtuallist.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.view.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.validator.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.userevents.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.ui.core.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.touch.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.tooltip.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.toolbar.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.toggleinputbase.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.togglebutton.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.timepicker.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.textbox.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.textarea.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.tabstrip.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.splitter.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.splitbutton.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.sortable.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.slider.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.selectable.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.router.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.responsivepanel.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.resizable.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.progressbar.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.popup.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.panelbar.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.pager.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.numerictextbox.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.notification.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.multiselect.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.mobile.scroller.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.menu.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.maskedtextbox.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.loader.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.listview.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.listbox.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.list.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.label.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.icons.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.input.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.icon.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.chiplist.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.chip.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.button.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.html.base.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.fx.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.floatinglabel.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.editable.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dropdownlist.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dropdownbutton.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.draganddrop.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dialog.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.datetimepicker.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.datepicker.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.dateinput.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.xml.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.signalr.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.odata.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.data.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.core.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.combobox.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.colorpicker.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.color.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.checkbox.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.calendar.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.buttongroup.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.button.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.button.menu.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.bottomnavigation.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.binder.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.badge.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.autocomplete.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.angular.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\kendo.actionsheet.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zu.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zu-ZA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-TW.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-SG.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-MO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-HK.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hant.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans-MO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-Hans-HK.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CHT.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zh-CHS.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh-Tfng.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.zgh-Tfng-MA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo-NG.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yo-BJ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yi.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yi-001.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yav.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.yav-CM.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xog.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xog-UG.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xh.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.xh-ZA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wo.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wo-SN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wal.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wal-ET.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wae.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.wae-CH.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vun.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vun-TZ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vo.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vo-001.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vi.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vi-VN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ve.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ve-ZA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Vaii.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Vaii-LR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Latn.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.vai-Latn-LR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Latn.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Latn-UZ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Cyrl.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Cyrl-UZ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Arab.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uz-Arab-AF.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur-PK.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ur-IN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uk.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.uk-UA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ug.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ug-CN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Tfng.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Tfng-MA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn-MA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Latn-DZ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Arab.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tzm-Arab-MA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.twq.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.twq-NE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tt.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tt-RU.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ts.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ts-ZA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr-TR.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tr-CY.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.to.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.to-TO.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn-ZA.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tn-BW.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tk.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tk-TM.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tig.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tig-ER.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti-ET.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ti-ER.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.th.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.th-TH.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg-Cyrl.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.tg-Cyrl-TJ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo-UG.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.teo-KE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.te.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.te-IN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-SG.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-MY.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-LK.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.ta-IN.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.syr.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.syr-SY.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-UG.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-TZ.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-KE.min.js.map" />
+    <Content Include="Scripts\kendo\2023.3.1010\cultures\kendo.culture.sw-CD.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TestTelerik.aspx.cs">
+      <DependentUpon>TestTelerik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestTelerik.aspx.designer.cs">
+      <DependentUpon>TestTelerik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52161</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44395/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
