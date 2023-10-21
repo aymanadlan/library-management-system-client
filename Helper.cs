@@ -56,7 +56,6 @@ namespace library_management_system_client
             HttpClient client = new HttpClient();
             HttpContent inputContent = new StringContent(inputJson, Encoding.UTF8, "application/json");
             _ = client.PutAsync($"{apiUrl}/update-book/{id}", inputContent).Result;
-
         }
         public static void Delete(int id)
         {

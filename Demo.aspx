@@ -9,7 +9,7 @@
     <telerik:RadGrid ID="RadGridBooks" runat="server" AllowPaging="True" AllowSorting="true" AllowFilteringByColumn="true"
         OnUpdateCommand="RadGrid1_UpdateCommand"
         EnableAJAX="True"
-        OnItemCommand="rgBook_ItemCommand" AllowAutomaticInserts="True">
+        OnItemCommand="RgBook_ItemCommand" AllowAutomaticInserts="True">
 
         <MasterTableView AutoGenerateColumns="False" DataKeyNames="ID">
             <Columns>
