@@ -1,10 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Demo.aspx.cs" Inherits="library_management_system_client.Demo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Demo.aspx.cs" MasterPageFile="~/Site.Master" Inherits="library_management_system_client.Demo" %>
 
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
 
-
-<form runat="server">
-    <asp:ScriptManager ID="SM" runat="server"></asp:ScriptManager>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <telerik:RadLabel ID="RadLabelError" runat="server" ForeColor="DarkRed" Visible="false">Sorry, something went wrong!</telerik:RadLabel>
 
@@ -91,6 +89,7 @@
         </MasterTableView>
     </telerik:RadGrid>
 
+    <br />
     <telerik:RadButton ID="Addbtn" runat="server" Text="Add Book" OnClick="AddBook_Click" Height="30px" Width="200px"></telerik:RadButton>
 
     <div id="divInsert" runat="server" visible="false">
@@ -134,5 +133,5 @@
             </tbody>
         </table>
     </div>
+</asp:Content>
 
-</form>
