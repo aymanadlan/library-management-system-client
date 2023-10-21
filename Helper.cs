@@ -36,7 +36,7 @@ namespace library_management_system_client
             {
                 Name = name.Trim(),
                 Description=decription.Trim(),
-                Price=100
+                Price= decimal.Parse(price.Trim())
             };
             string inputJson = (new JavaScriptSerializer()).Serialize(input);
             HttpClient client = new HttpClient();
@@ -51,7 +51,7 @@ namespace library_management_system_client
                 Id=id,
                 Name = name.Trim(),
                 Description = decription.Trim(),
-                Price = 100
+                Price = decimal.Parse(price.Trim())
             };
             string inputJson = (new JavaScriptSerializer()).Serialize(input);
             HttpClient client = new HttpClient();
