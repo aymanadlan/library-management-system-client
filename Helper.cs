@@ -9,10 +9,11 @@ namespace library_management_system_client
 {
     public static class Helper
     {
+       private static string apiUrl = ConfigurationManager.AppSettings["library-management-api-azure-url"];
+
         public static List<Book> Populate()
         {
-            // Reads the library-management-api-azure-url value from Web.config filw
-            string apiUrl = ConfigurationManager.AppSettings["library-management-api-azure-url"];
+            // Reads the library-management-api-azure-url value from Web.config file
 
             HttpClient client = new HttpClient();
 
@@ -31,7 +32,6 @@ namespace library_management_system_client
         }
         public static void Add(string name, string decription, string price)
         {
-            string apiUrl = "https://localhost:7163/api/Books";
             var input = new Book()
             {
                 Name = name.Trim(),
@@ -46,7 +46,6 @@ namespace library_management_system_client
         }
         public static void Update(int id, string name, string decription, string price)
         {
-            string apiUrl = "https://localhost:7163/api/Books";
             var input = new Book()
             {
                 Id=id,
@@ -62,11 +61,8 @@ namespace library_management_system_client
         }
         public static void Delete(int id)
         {
-            string apiUrl = "https://localhost:7163/api/Books";
-           
             HttpClient client = new HttpClient();
             HttpResponseMessage response = client.DeleteAsync($"{apiUrl}/delete-book/{id}").Result;
-
         }
     }
 }
