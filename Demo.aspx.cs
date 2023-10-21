@@ -21,14 +21,14 @@ namespace library_management_system_client
         protected void Page_Load(object sender, EventArgs e)
         {
         }
-        protected void rgBook_ItemCommand(object sender, GridCommandEventArgs e)
+        protected void RgBook_ItemCommand(object sender, GridCommandEventArgs e)
         {
-            GridDataItem gdItem = null;
+            GridDataItem gdItem ;
 
             switch (e.CommandName)
             {
                 case "Edit":
-                    gdItem = (GridDataItem)e.Item;
+                    _ = (GridDataItem)e.Item;
                     break;
                 case "Delete":
                     gdItem = (GridDataItem)e.Item;
