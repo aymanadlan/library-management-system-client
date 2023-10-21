@@ -9,7 +9,7 @@ namespace library_management_system_client
 {
     public static class Helper
     {
-       private static readonly string apiUrl = ConfigurationManager.AppSettings["library-management-api-azure-url"];
+        private static readonly string apiUrl = ConfigurationManager.AppSettings["library-management-api-azure-url"];
 
         public static List<Book> Populate()
         {
@@ -32,11 +32,11 @@ namespace library_management_system_client
         }
         public static void Add(string name, string decription, string price)
         {
-            var input = new Book()
+            var input = new
             {
                 Name = name.Trim(),
-                Description=decription.Trim(),
-                Price= decimal.Parse(price.Trim())
+                Description = decription.Trim(),
+                Price = decimal.Parse(price.Trim())
             };
             string inputJson = (new JavaScriptSerializer()).Serialize(input);
             HttpClient client = new HttpClient();
@@ -45,9 +45,9 @@ namespace library_management_system_client
         }
         public static void Update(int id, string name, string decription, string price)
         {
-            var input = new Book()
+            var input = new
             {
-                Id=id,
+                Id = id,
                 Name = name.Trim(),
                 Description = decription.Trim(),
                 Price = decimal.Parse(price.Trim())
